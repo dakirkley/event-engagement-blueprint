@@ -16,16 +16,16 @@
             line-height: 1.5;
         }
         .container {
-            max-width: 900px;
+            max-width: 1100px;
             margin: 0 auto;
-            padding: 60px 40px;
+            padding: 40px 30px;
         }
         .header {
             display: flex;
             justify-content: space-between;
             align-items: flex-end;
-            margin-bottom: 60px;
-            padding-bottom: 30px;
+            margin-bottom: 40px;
+            padding-bottom: 25px;
             border-bottom: 1px solid #333;
         }
         .brand {
@@ -61,7 +61,7 @@
             margin-top: 2px;
         }
         .invoice-label {
-            font-size: 72px;
+            font-size: 64px;
             font-weight: 900;
             color: #fff;
             letter-spacing: -2px;
@@ -70,11 +70,13 @@
         .invoice-label span {
             color: #c9a227;
         }
-        .main-content {
+        .two-column {
             display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 60px;
-            margin-bottom: 50px;
+            grid-template-columns: 1fr 380px;
+            gap: 40px;
+        }
+        .left-column {
+            padding-right: 20px;
         }
         .section-title {
             font-size: 11px;
@@ -82,13 +84,16 @@
             text-transform: uppercase;
             letter-spacing: 3px;
             color: #c9a227;
-            margin-bottom: 20px;
+            margin-bottom: 15px;
+        }
+        .client-section {
+            margin-bottom: 35px;
         }
         .client-name {
-            font-size: 28px;
+            font-size: 26px;
             font-weight: 700;
             color: #fff;
-            margin-bottom: 15px;
+            margin-bottom: 12px;
             letter-spacing: -0.5px;
         }
         .client-details p {
@@ -97,13 +102,12 @@
             line-height: 1.8;
         }
         .invoice-meta {
-            text-align: right;
+            margin-bottom: 35px;
         }
         .meta-row {
             display: flex;
-            justify-content: flex-end;
             gap: 20px;
-            margin-bottom: 12px;
+            margin-bottom: 10px;
             font-size: 14px;
         }
         .meta-label {
@@ -111,23 +115,23 @@
             text-transform: uppercase;
             letter-spacing: 1px;
             font-size: 11px;
+            width: 100px;
         }
         .meta-value {
             color: #fff;
             font-weight: 600;
-            min-width: 120px;
         }
         .event-section {
             background: #111;
-            border-radius: 16px;
-            padding: 30px;
-            margin-bottom: 40px;
+            border-radius: 12px;
+            padding: 25px;
             border: 1px solid #222;
+            margin-bottom: 35px;
         }
         .event-grid {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
-            gap: 30px;
+            gap: 20px;
         }
         .event-item {
             text-align: center;
@@ -137,22 +141,22 @@
             text-transform: uppercase;
             letter-spacing: 2px;
             color: #666;
-            margin-bottom: 8px;
+            margin-bottom: 6px;
         }
         .event-item-value {
-            font-size: 16px;
+            font-size: 14px;
             font-weight: 600;
             color: #fff;
         }
         .line-items {
             width: 100%;
-            margin-bottom: 30px;
+            margin-bottom: 25px;
         }
         .line-header {
             display: grid;
-            grid-template-columns: 1fr 100px 120px;
-            gap: 20px;
-            padding: 20px 0;
+            grid-template-columns: 1fr 80px 100px;
+            gap: 15px;
+            padding: 15px 0;
             border-bottom: 2px solid #c9a227;
             font-size: 11px;
             font-weight: 700;
@@ -162,11 +166,11 @@
         }
         .line-row {
             display: grid;
-            grid-template-columns: 1fr 100px 120px;
-            gap: 20px;
-            padding: 25px 0;
+            grid-template-columns: 1fr 80px 100px;
+            gap: 15px;
+            padding: 20px 0;
             border-bottom: 1px solid #222;
-            font-size: 15px;
+            font-size: 14px;
             align-items: center;
         }
         .line-desc {
@@ -180,126 +184,130 @@
         .line-amount {
             color: #fff;
             font-weight: 700;
-            font-size: 18px;
+            font-size: 16px;
             text-align: right;
         }
         .totals-section {
             display: flex;
             justify-content: flex-end;
-            margin: 40px 0;
         }
         .totals-box {
-            width: 320px;
+            width: 240px;
         }
         .total-row {
             display: flex;
             justify-content: space-between;
-            padding: 15px 0;
-            font-size: 14px;
+            padding: 10px 0;
+            font-size: 13px;
             color: #888;
             border-bottom: 1px solid #222;
         }
         .total-row.grand {
             border-bottom: none;
             border-top: 2px solid #c9a227;
-            margin-top: 10px;
-            padding-top: 20px;
-            font-size: 28px;
+            margin-top: 8px;
+            padding-top: 15px;
+            font-size: 22px;
             font-weight: 800;
             color: #fff;
         }
-        .payment-section {
-            background: linear-gradient(135deg, #c9a227 0%, #f4d03f 100%);
+        .right-column {
+            position: sticky;
+            top: 30px;
+            height: fit-content;
+        }
+        .payment-card {
+            background: linear-gradient(145deg, #c9a227 0%, #f4d03f 50%, #c9a227 100%);
             border-radius: 20px;
-            padding: 50px;
+            padding: 35px;
             text-align: center;
-            margin-top: 50px;
         }
         .payment-title {
-            font-size: 14px;
+            font-size: 13px;
             font-weight: 800;
             text-transform: uppercase;
             letter-spacing: 3px;
             color: #0a0a0a;
-            margin-bottom: 30px;
+            margin-bottom: 25px;
         }
         .payment-schedule {
             display: flex;
             justify-content: center;
-            gap: 60px;
-            margin: 40px 0;
+            gap: 30px;
+            margin: 25px 0;
         }
         .payment-item {
             text-align: center;
+            flex: 1;
         }
         .payment-amount {
-            font-size: 48px;
+            font-size: 36px;
             font-weight: 900;
             color: #0a0a0a;
             line-height: 1;
         }
         .payment-label {
-            font-size: 12px;
+            font-size: 11px;
             font-weight: 700;
             text-transform: uppercase;
-            letter-spacing: 2px;
+            letter-spacing: 1px;
             color: rgba(0,0,0,0.6);
-            margin-top: 10px;
+            margin-top: 8px;
         }
         .payment-due {
-            font-size: 11px;
+            font-size: 10px;
             color: rgba(0,0,0,0.5);
-            margin-top: 8px;
-            padding: 6px 16px;
+            margin-top: 6px;
+            padding: 4px 12px;
             background: rgba(0,0,0,0.1);
             border-radius: 20px;
             display: inline-block;
         }
         .pay-button {
-            display: inline-block;
+            display: block;
             background: #0a0a0a;
             color: #fff;
-            padding: 20px 60px;
+            padding: 18px 40px;
             font-size: 14px;
             font-weight: 800;
             text-decoration: none;
             border-radius: 50px;
-            margin-top: 30px;
+            margin-top: 25px;
             text-transform: uppercase;
             letter-spacing: 2px;
             transition: all 0.3s ease;
         }
         .pay-button:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+        }
+        .security-note {
+            margin-top: 20px;
+            font-size: 11px;
+            color: rgba(0,0,0,0.5);
         }
         .footer {
             text-align: center;
-            margin-top: 50px;
-            padding-top: 30px;
+            margin-top: 40px;
+            padding-top: 25px;
             border-top: 1px solid #222;
         }
         .footer p {
             color: #666;
             font-size: 13px;
-            margin-bottom: 8px;
+            margin-bottom: 6px;
         }
         .footer-contact {
             color: #c9a227;
             font-weight: 600;
             font-size: 14px;
         }
-        @media (max-width: 768px) {
-            .container { padding: 30px 20px; }
-            .header { flex-direction: column; align-items: flex-start; gap: 20px; }
+        @media (max-width: 900px) {
+            .two-column { grid-template-columns: 1fr; }
+            .right-column { position: static; }
+            .left-column { padding-right: 0; }
+            .event-grid { grid-template-columns: 1fr; gap: 15px; }
             .invoice-label { font-size: 48px; }
-            .main-content { grid-template-columns: 1fr; gap: 30px; }
-            .invoice-meta { text-align: left; }
-            .meta-row { justify-content: flex-start; }
-            .event-grid { grid-template-columns: 1fr; }
-            .line-header, .line-row { grid-template-columns: 2fr 1fr 1fr; }
-            .payment-schedule { flex-direction: column; gap: 30px; }
-            .payment-section { padding: 30px 20px; }
         }
     </style>
 </head>
@@ -316,98 +324,104 @@
             <div class="invoice-label">INVOI<span>CE</span></div>
         </div>
 
-        <div class="main-content">
-            <div class="client-section">
-                <div class="section-title">Bill To</div>
-                <div class="client-name">Vina Moore</div>
-                <div class="client-details">
-                    <p>Venture Government Strategies</p>
-                    <p>601 Pennsylvania Avenue, NW</p>
-                    <p>South Tower, Suite 720</p>
-                    <p>Washington, D.C. 20004</p>
+        <div class="two-column">
+            <div class="left-column">
+                <div class="client-section">
+                    <div class="section-title">Bill To</div>
+                    <div class="client-name">Vina Moore</div>
+                    <div class="client-details">
+                        <p>Venture Government Strategies</p>
+                        <p>601 Pennsylvania Avenue, NW</p>
+                        <p>South Tower, Suite 720</p>
+                        <p>Washington, D.C. 20004</p>
+                    </div>
                 </div>
-            </div>
-            <div class="invoice-meta">
-                <div class="section-title">Invoice Details</div>
-                <div class="meta-row">
-                    <span class="meta-label">Invoice #</span>
-                    <span class="meta-value">RSS-2026-0428</span>
-                </div>
-                <div class="meta-row">
-                    <span class="meta-label">Date</span>
-                    <span class="meta-value">April 27, 2026</span>
-                </div>
-                <div class="meta-row">
-                    <span class="meta-label">Due Date</span>
-                    <span class="meta-value">April 28, 2026</span>
-                </div>
-            </div>
-        </div>
 
-        <div class="event-section">
-            <div class="event-grid">
-                <div class="event-item">
-                    <div class="event-item-label">Service</div>
-                    <div class="event-item-value">Shoe Shine Activation</div>
+                <div class="invoice-meta">
+                    <div class="section-title">Invoice Details</div>
+                    <div class="meta-row">
+                        <span class="meta-label">Invoice #</span>
+                        <span class="meta-value">RSS-2026-0428</span>
+                    </div>
+                    <div class="meta-row">
+                        <span class="meta-label">Date</span>
+                        <span class="meta-value">April 27, 2026</span>
+                    </div>
+                    <div class="meta-row">
+                        <span class="meta-label">Due Date</span>
+                        <span class="meta-value">April 28, 2026</span>
+                    </div>
                 </div>
-                <div class="event-item">
-                    <div class="event-item-label">Event Date</div>
-                    <div class="event-item-value">April 28, 2026</div>
-                </div>
-                <div class="event-item">
-                    <div class="event-item-label">Location</div>
-                    <div class="event-item-value">Washington, DC</div>
-                </div>
-            </div>
-        </div>
 
-        <div class="line-items">
-            <div class="line-header">
-                <span>Description</span>
-                <span style="text-align: center;">Qty</span>
-                <span style="text-align: right;">Amount</span>
-            </div>
-            <div class="line-row">
-                <span class="line-desc">Event Shoe Shine Activation Service</span>
-                <span class="line-qty">1</span>
-                <span class="line-amount">$450.00</span>
-            </div>
-        </div>
+                <div class="event-section">
+                    <div class="event-grid">
+                        <div class="event-item">
+                            <div class="event-item-label">Service</div>
+                            <div class="event-item-value">Shoe Shine Activation</div>
+                        </div>
+                        <div class="event-item">
+                            <div class="event-item-label">Event Date</div>
+                            <div class="event-item-value">April 28, 2026</div>
+                        </div>
+                        <div class="event-item">
+                            <div class="event-item-label">Location</div>
+                            <div class="event-item-value">Washington, DC</div>
+                        </div>
+                    </div>
+                </div>
 
-        <div class="totals-section">
-            <div class="totals-box">
-                <div class="total-row">
-                    <span>Subtotal</span>
-                    <span>$450.00</span>
+                <div class="line-items">
+                    <div class="line-header">
+                        <span>Description</span>
+                        <span style="text-align: center;">Qty</span>
+                        <span style="text-align: right;">Amount</span>
+                    </div>
+                    <div class="line-row">
+                        <span class="line-desc">Event Shoe Shine Activation Service</span>
+                        <span class="line-qty">1</span>
+                        <span class="line-amount">$450.00</span>
+                    </div>
                 </div>
-                <div class="total-row">
-                    <span>Tax</span>
-                    <span>$0.00</span>
-                </div>
-                <div class="total-row grand">
-                    <span>Total</span>
-                    <span>$450.00</span>
-                </div>
-            </div>
-        </div>
 
-        <div class="payment-section">
-            <div class="payment-title">Payment Schedule</div>
-            <div class="payment-schedule">
-                <div class="payment-item">
-                    <div class="payment-amount">$225</div>
-                    <div class="payment-label">Deposit</div>
-                    <div class="payment-due">Due Now</div>
-                </div>
-                <div class="payment-item">
-                    <div class="payment-amount">$225</div>
-                    <div class="payment-label">Final Payment</div>
-                    <div class="payment-due">Due April 28</div>
+                <div class="totals-section">
+                    <div class="totals-box">
+                        <div class="total-row">
+                            <span>Subtotal</span>
+                            <span>$450.00</span>
+                        </div>
+                        <div class="total-row">
+                            <span>Tax</span>
+                            <span>$0.00</span>
+                        </div>
+                        <div class="total-row grand">
+                            <span>Total</span>
+                            <span>$450.00</span>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <a href="https://link.fastpaydirect.com/invoice/69ee8a08384a5b47d2ccf569" class="pay-button">
-                Pay Invoice Now
-            </a>
+
+            <div class="right-column">
+                <div class="payment-card">
+                    <div class="payment-title">Payment Schedule</div>
+                    <div class="payment-schedule">
+                        <div class="payment-item">
+                            <div class="payment-amount">$225</div>
+                            <div class="payment-label">Deposit</div>
+                            <div class="payment-due">Due Now</div>
+                        </div>
+                        <div class="payment-item">
+                            <div class="payment-amount">$225</div>
+                            <div class="payment-label">Final</div>
+                            <div class="payment-due">Due Apr 28</div>
+                        </div>
+                    </div>
+                    <a href="https://link.fastpaydirect.com/invoice/69ee8a08384a5b47d2ccf569" class="pay-button">
+                        Pay Invoice Now
+                    </a>
+                    <div class="security-note">🔒 Secure SSL Payment</div>
+                </div>
+            </div>
         </div>
 
         <div class="footer">
