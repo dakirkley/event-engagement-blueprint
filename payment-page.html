@@ -127,6 +127,7 @@
             padding: 25px;
             border: 1px solid #222;
             margin-bottom: 35px;
+            animation: fadeInUp 0.6s ease-out;
         }
         .event-grid {
             display: grid;
@@ -221,6 +222,8 @@
             border-radius: 20px;
             padding: 35px;
             text-align: center;
+            animation: slideInRight 0.5s ease-out, shimmer 3s ease-in-out infinite;
+            background-size: 200% 200%;
         }
         .payment-title {
             font-size: 13px;
@@ -276,10 +279,16 @@
             text-transform: uppercase;
             letter-spacing: 2px;
             transition: all 0.3s ease;
+            animation: pulse 2s ease-in-out infinite;
         }
         .pay-button:hover {
-            transform: translateY(-2px);
+            transform: translateY(-2px) scale(1.02);
             box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+            animation: none;
+        }
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(10,10,10,0.4); }
+            50% { transform: scale(1.02); box-shadow: 0 0 20px 5px rgba(10,10,10,0.2); }
         }
         .security-note {
             margin-top: 20px;
@@ -301,6 +310,34 @@
             color: #c9a227;
             font-weight: 600;
             font-size: 14px;
+        }
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        @keyframes slideInRight {
+            from { opacity: 0; transform: translateX(30px); }
+            to { opacity: 1; transform: translateX(0); }
+        }
+        @keyframes shimmer {
+            0%, 100% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+        }
+        .container {
+            animation: fadeInUp 0.4s ease-out;
+        }
+        .line-row {
+            animation: fadeInUp 0.5s ease-out backwards;
+        }
+        .line-row:nth-child(1) { animation-delay: 0.1s; }
+        .line-row:nth-child(2) { animation-delay: 0.2s; }
+        .line-row:nth-child(3) { animation-delay: 0.3s; }
+        .brand-icon {
+            animation: float 3s ease-in-out infinite;
+        }
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-5px); }
         }
         @media (max-width: 900px) {
             .two-column { grid-template-columns: 1fr; }
