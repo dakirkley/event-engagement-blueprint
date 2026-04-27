@@ -4,9 +4,21 @@
     {
       "src": "index.html",
       "use": "@vercel/static"
+    },
+    {
+      "src": "payment-page.html",
+      "use": "@vercel/static"
     }
   ],
   "routes": [
+    {
+      "src": "/payment",
+      "dest": "/payment-page.html"
+    },
+    {
+      "src": "/payment.html",
+      "dest": "/payment-page.html"
+    },
     {
       "src": "/(.*)",
       "dest": "/index.html"

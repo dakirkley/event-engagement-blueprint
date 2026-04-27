@@ -1,0 +1,24 @@
+{
+  "projectName": "event-engagement-blueprint",
+  "cleanedName": "event-engagement-blueprint",
+  "github": {
+    "owner": "dakirkley",
+    "repo": "event-engagement-blueprint",
+    "fullName": "dakirkley/event-engagement-blueprint",
+    "repoId": 1218498760,
+    "visibility": "public",
+    "isOrganization": false,
+    "isNew": true,
+    "url": "https://github.com/dakirkley/event-engagement-blueprint"
+  },
+  "vercel": {
+    "projectId": "prj_D9G5RIihitudYzF0ecVUHcF8pomc",
+    "projectName": "event-engagement-blueprint",
+    "scope": "Daken Inc Projects",
+    "teamId": "team_PXwzLGhwj7bhlBUiEMGEdvwz",
+    "isNew": true,
+    "framework": "nextjs"
+  },
+  "linkedAt": "2026-04-23",
+  "status": "ready"
+}
