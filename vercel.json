@@ -12,6 +12,10 @@
     {
       "src": "estimate-page.html",
       "use": "@vercel/static"
+    },
+    {
+      "src": "CMA-estimate.html",
+      "use": "@vercel/static"
     }
   ],
   "routes": [
