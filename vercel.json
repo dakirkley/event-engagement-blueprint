@@ -40,6 +40,14 @@
       "dest": "/estimate-page.html"
     },
     {
+      "src": "/CMA-estimate",
+      "dest": "/CMA-estimate.html"
+    },
+    {
+      "src": "/CMA-estimate.html",
+      "dest": "/CMA-estimate.html"
+    },
+    {
       "src": "/(.*)",
       "dest": "/index.html"
     }
