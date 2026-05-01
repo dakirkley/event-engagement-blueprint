@@ -8,6 +8,10 @@
     {
       "src": "payment-page.html",
       "use": "@vercel/static"
+    },
+    {
+      "src": "estimate-page.html",
+      "use": "@vercel/static"
     }
   ],
   "routes": [
@@ -18,6 +22,14 @@
     {
       "src": "/payment.html",
       "dest": "/payment-page.html"
+    },
+    {
+      "src": "/estimate",
+      "dest": "/estimate-page.html"
+    },
+    {
+      "src": "/estimate.html",
+      "dest": "/estimate-page.html"
     },
     {
       "src": "/(.*)",
