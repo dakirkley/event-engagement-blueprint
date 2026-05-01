@@ -32,6 +32,14 @@
       "dest": "/estimate-page.html"
     },
     {
+      "src": "/ASAE-estimate",
+      "dest": "/estimate-page.html"
+    },
+    {
+      "src": "/ASAE-estimate.html",
+      "dest": "/estimate-page.html"
+    },
+    {
       "src": "/(.*)",
       "dest": "/index.html"
     }
